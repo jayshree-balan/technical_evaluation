@@ -1,0 +1,9 @@
+site_info_alter.content:
+  path: '/page_json/{site_api_key}/{node_id}'
+  defaults:
+    _controller: 'Drupal\site_info_alter\Controller\SiteInfoAlterController::content'
+    _title: 'Node details'
+    site_api_key: ''
+    node_id: ''
+  requirements:
+    _permission: 'access content'

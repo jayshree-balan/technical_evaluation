@@ -1,0 +1,14 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function site_info_alter_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  // Change the text of submit button in Site Information form
+  if ($form_id == 'system_site_information_settings') {
+    //print_R($form['actions']);
+	$form['actions']['submit']['#value'] = t('Update Configuration');
+  }
+}

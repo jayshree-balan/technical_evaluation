@@ -1,0 +1,8 @@
+# Schema for adding a new element in site configuration
+
+system.site:
+  mapping:
+   # Site API Key is the new field to be added
+    siteapikey:
+      type: string
+      label: 'Site API Key'
